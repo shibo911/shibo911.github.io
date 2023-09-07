@@ -14,7 +14,7 @@ function setUserName() {
     setUserName();
   } else {
     const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Mozilla is cool, ${storedName}`;
+    myHeading.textContent = `RCB is your favourite team now :D, ${storedName}`;
   }
   myButton.onclick = () => {
     setUserName();
