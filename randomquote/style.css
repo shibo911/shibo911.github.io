@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Font;
+  src: url(the-pretender-reg-sans-press.ttf);
+}
+
+body {
+  background-color: #5cdb95;
+  font-family: Font;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #5cdb95;
+}
+
+#quoteHolder {
+  background-color: #05386b;
+  font-size: 3.5em;
+  color: #edf5e1;
+  border: 10px solid #379683;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+#authorHolder {
+  font-style: italic;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #05386b;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #8ee4af;
+  font-size: 1.5em;
+}
+
+#quoteGenerator {
+  margin-top: 20px;
+  font-size: 1.25em;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  border: 2px solid #4caf50;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+#quoteGenerator:hover {
+  background-color: #218838;
+  border-color: #218838;
+  color: #fff;
+}
