@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Guide App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Enter movie name here..."
+          id="movie-name"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <!-- Menu button -->
+    <div id="menu-button" role="button" title="sweet hamburger">
+      <div class="hamburger">
+        <div class="inner"></div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/" onclick="route(event)">Home Page</a>
+        </li>
+        <li>
+          <a href="https://www.imdb.com/chart/top/" onclick="route(event)"
+            >Top Rated</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/gdsciiitl/" onclick="route(event)"
+            >GDSC_IIITL</a
+          >
+        </li>
+        <li>
+          <a href="dev_team/index.html" onclick="route(event)">Dev Team</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var menuButton = document.getElementById("menu-button");
+        menuButton.addEventListener("click", function () {
+          document.body.classList.toggle("menu-open");
+        });
+      });
+    </script>
+  </body>
+</html>
